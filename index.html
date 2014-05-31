@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="statics/css/screen.css"/>
+    <title>STARS</title>
+</head>
+<body>
+    <section class="grade">
+        <ul>
+            <li class="star star1"><span>1</span></li>
+            <li class="star star2"><span>2</span></li>
+            <li class="star star3"><span>3</span></li>
+            <li class="star star4"><span>4</span></li>
+            <li class="star star5"><span>5</span></li>
+        </ul>
+    </section>
+    <script>
+        var stars = document.querySelectorAll('.star');
+        Array().forEach.call(stars, function(i) {
+            i.addEventListener('click', function() {
+                Array().forEach.call(stars, function(j) {
+                    console.log(j.className);
+                    j.className = j.className.replace(' checked', '');
+                });
+                //console.log(this);
+                this.className += ' checked';
+            });
+        });
+    </script>
+</body>
+</html>

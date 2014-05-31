@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+    float: left;
+}
+.grade ul {
+    width: 120px;
+    height: 18px;
+    background: url('../images/star.png');
+}
+.grade ul li {
+    position: absolute;
+    height: 18px;
+}
+.star1 {
+    width: 24px;
+    z-index: 5;
+}
+.star2 {
+    width: 48px;
+    z-index: 4;
+}
+.star3 {
+    width: 72px;
+    z-index: 3;
+}
+.star4 {
+    width: 96px;
+    z-index: 2;
+}
+.star5 {
+    width: 120px;
+    z-index: 1;
+}
+.grade ul:hover .star{
+    background: none;
+}
+.grade ul li:hover {
+    background: url('../images/star.png') left 20px !important;
+}
+.checked {
+    background: url('../images/star.png') left 20px;
+}
+.grade ul li span {
+    display: none;
+}
